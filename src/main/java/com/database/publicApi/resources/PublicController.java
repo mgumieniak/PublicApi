@@ -7,13 +7,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(path="/api")
+@RequestMapping(path = "/api")
 @CrossOrigin("*")
 @Slf4j
 public class PublicController {
 
     @GetMapping
-    public int getExample(){
+    public int getExample() {
+//        UserPrincipalDetailsService
+//        SecurityConfiguration
+//        JwtAuthorizationFilter
         return 2;
     }
 }
